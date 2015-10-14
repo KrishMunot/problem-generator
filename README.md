@@ -1,3 +1,5 @@
-# problem-generator
-Generates problems on arithmentic additon and subtraction
+# '''Problem generator'''
+======================
+<br/>
+Generates customizable arithmetic addition & subtraction problems
 
