@@ -100,12 +100,17 @@ def main():
     numSubtraction = raw_input('How many of these numbers should be subtraction? ')
     numSubtraction = isRealNumber(numSubtraction)
 
+    # Converts the input string into integers
     numProblems = int(numProblems)
     numNumber = int(numNumber)
     numDigits = int(numDigits)
 
+    # Creates a list of lists with each problem and its solution0
     listOfProblemLists = [problemGenerator(numNumber, numDigits, numSubtraction) for x in range(numProblems)]
     listOfProblemLists = convertByElement(listOfProblemLists, numNumber)
+
+    # Saves the list of problems into a CSV file
+    fileNameCSV = raw_input('These problems will be saved in a CSV file. What would you like to name it? ')
 
 
 if __name__ == "__main__":
